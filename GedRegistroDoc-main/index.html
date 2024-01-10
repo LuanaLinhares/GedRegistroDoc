@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro De Documento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Registro de Documentos</h1>
+  <form>
+    <label for="title">Título:</label>
+    <input type="text" id="title" required>
+    <br>
+    <label for="author">Autor:</label>
+    <input type="text" id="author" required>
+    <br>
+    <label for="date">Data de Criação:</label>
+    <input type="text" id="date" required>
+    <br>
+    <label for="classificationCode">Código de Classificação:</label>
+    <input type="text" id="classificationCode" required>
+    <br>
+    <button type="button" onclick="getClassification()">Verificar Classificação</button>
+    <br><br>
+    <label for="classification">Classificação:</label>
+    <input type="text" id="classification" readonly>
+    <br>
+    <label for="file">Arquivo:</label>
+    <input type="file" id="file" required>
+    <br>
+    <button type="button" onclick="getClassification()">Registrar</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
